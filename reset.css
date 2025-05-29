@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --filter-box-radius: 5.6px;
+  --card-radius: 8px;
+  --point-red: #dc392d;
+  --hovered-red: #bb3026;
+  --font-gray: #69707a;
+  --filter-box-shadow: 0 0.15rem 1.75rem #21283226;
+  --hovered-card-shadow: 0 0.5rem 2rem #21283240;
+  --common-transition: all 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f2f6fc;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  display: block;
+}

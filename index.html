@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오 페이지</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="full-container">
+      <!-- ------------------------------------------------------ -->
+      <div class="aside-container"></div>
+      <!-- ------------------------------------------------------ -->
+      <div class="inner-width">
+        <div class="page-tit-container">
+          <h1>포트폴리오 페이지</h1>
+          <p>카드를 클릭하시면 설명이 나옵니다.</p>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="filter-container">
+          <h2 class="hidden">필터</h2>
+
+          <div class="filter-container__left">
+            <h3>사용 기술</h3>
+            <div class="filter-container__check-list">
+              <label class="filter-container__check-item"
+                ><input id="HTML5" type="checkbox" />HTML5</label
+              >
+              <label class="filter-container__check-item"
+                ><input id="CSS3" type="checkbox" />CSS3</label
+              >
+              <label class="filter-container__check-item"
+                ><input id="Javascript" type="checkbox" />Javascript</label
+              >
+              <label class="filter-container__check-item"
+                ><input id="React" type="checkbox" />React</label
+              >
+              <label class="filter-container__check-item"
+                ><input id="SCSS" type="checkbox" />SCSS</label
+              >
+            </div>
+          </div>
+          <div class="filter-container__right">
+            <h3>다른 옵션</h3>
+            <div class="filter-container__check-list">
+              <label class="filter-container__check-item"
+                ><input id="key-projects" type="checkbox" />주요 프로젝트만
+                보기</label
+              >
+              <label class="filter-container__check-item"
+                ><input id="all-projects" type="checkbox" checked />모든
+                프로젝트 보기
+              </label>
+              <label class="filter-container__check-item"
+                ><input checked disabled type="checkbox" />최신순</label
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="project-container">
+          <p class="project-container__null-message">
+            일치하는 결과가 없습니다.
+          </p>
+          <h2 class="hidden">포트폴리오 모음</h2>
+          <ul class="project-container__list">
+            <!-- 여기 포트폴리오 리스트 들어감 -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

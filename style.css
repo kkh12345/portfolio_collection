@@ -1,0 +1,170 @@
+/* 공통 */
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.inner-width {
+  max-width: 1140px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+/* 스타일 */
+
+.full-container {
+  min-width: 1140px;
+}
+
+.loading-message {
+  padding: 10px 20px;
+  background-color: var(--point-red);
+  color: #fff;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-tit-container {
+  margin: 5rem 0;
+  color: #363d47;
+}
+
+.page-tit-container h1 {
+  margin-bottom: 1.6rem;
+  font-size: 4rem;
+}
+
+.page-tit-container p {
+  font-size: 1.6rem;
+  color: var(--font-gray);
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-container h3 {
+  color: var(--font-gray);
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.filter-container__check-list {
+  display: flex;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: var(--filter-box-shadow);
+  border-radius: var(--filter-box-radius);
+  color: #212832;
+}
+
+.filter-container__check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 14px 18px;
+  transition: var(--common-transition);
+}
+
+.filter-container__check-item:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.filter-container__check-item:not(:last-child) {
+  border-right: 1px solid #f2f2f2;
+}
+
+.filter-container__check-item input[type='checkbox'] {
+  width: 12.25px;
+  height: 12.25px;
+  accent-color: var(--point-red);
+}
+
+.project-container__null-message {
+  display: none;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--font-gray);
+}
+
+.project-container__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 4rem;
+}
+
+.project-card {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.project-card > a {
+  display: block;
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+}
+
+.project-card:hover .project-card__thumb-wrap {
+  box-shadow: var(--hovered-card-shadow);
+  transform: translateY(-5.33px);
+}
+
+.project-card__thumb-wrap {
+  aspect-ratio: 1.5;
+  overflow: hidden;
+  border-radius: var(--card-radius);
+  box-shadow: var(--filter-box-shadow);
+  transition: var(--common-transition);
+}
+
+.project-card__thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__txt-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+
+.project-card__tit {
+  color: #363d47;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.project-card__badge {
+  padding: 5.6px 8px;
+  border-radius: var(--filter-box-radius);
+  font-size: 1.2rem;
+}
+
+.project-card__badge.Team {
+  background-color: #d7e4f8;
+  color: #0061f2;
+}
+
+.project-card__badge.Single {
+  background-color: #d9eeec;
+  color: #00ac69;
+}

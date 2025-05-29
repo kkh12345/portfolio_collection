@@ -1,0 +1,97 @@
+[
+  {
+    "id": 0,
+    "title": "포트폴리오 페이지",
+    "skills": ["HTML5", "CSS3", "Javascript"],
+    "workers": 1,
+    "img": "./imgs/portfolio_page.png",
+    "isKeyProject": false,
+    "siteLink": "#"
+  },
+  {
+    "id": 1,
+
+    "title": "Daum 홈페이지 클론코딩",
+    "skills": ["HTML5", "SCSS"],
+    "workers": 1,
+    "img": "./imgs/daum.png",
+    "isKeyProject": true,
+    "siteLink": "https://kkh12345.github.io/daum/"
+  },
+  {
+    "id": 2,
+
+    "title": "서울시청 홈페이지 클론코딩",
+    "skills": ["HTML5", "CSS3"],
+    "workers": 1,
+    "img": "./imgs/seoul_city.png",
+    "isKeyProject": true,
+    "siteLink": "https://kkh12345.github.io/seoul_city_hall/"
+  },
+  {
+    "id": 3,
+
+    "title": "mimico(카페24) 클론코딩 (제작 중...)",
+    "skills": [
+      "React",
+      "CSS3",
+      "styled-components",
+      "react-hook-form",
+      "redux-toolkit"
+    ],
+    "workers": 1,
+    "img": "./imgs/mimico.png",
+    "isKeyProject": false,
+    "siteLink": "https://nimble-taffy-e9bacb.netlify.app/"
+  },
+  {
+    "id": 4,
+
+    "title": "moani(카페24) 클론코딩",
+    "skills": ["React", "CSS3", "styled-components"],
+    "workers": 1,
+    "img": "./imgs/moani.png",
+    "isKeyProject": true,
+    "siteLink": "https://aquamarine-eclair-bb5949.netlify.app/"
+  },
+  {
+    "id": 5,
+
+    "title": "개인 소개 페이지",
+    "skills": ["HTML5", "CSS3", "Javascript"],
+    "workers": 1,
+    "img": "./imgs/personal.png",
+    "isKeyProject": false,
+    "siteLink": "https://kkh12345.github.io/personal_portfolio_Page/"
+  },
+  {
+    "id": 6,
+
+    "title": "인터파크티켓 홈페이지 리뉴얼",
+    "skills": ["HTML5", "CSS3", "Javascript"],
+    "workers": 3,
+    "img": "./imgs/interpark_ticket.png",
+    "isKeyProject": true,
+    "siteLink": "https://kkh12345.github.io/renewal_interpark_ticket/"
+  },
+  {
+    "id": 7,
+
+    "title": "한끼두끼(카페24) 클론코딩",
+    "skills": ["HTML5", "CSS3", "Javascript"],
+    "workers": 1,
+    "img": "./imgs/food.png",
+    "isKeyProject": true,
+    "siteLink": "https://kkh12345.github.io/cafe24_food/"
+  },
+  {
+    "id": 8,
+
+    "title": "한국마약퇴치운동본부 리뉴얼",
+    "skills": ["HTML5", "CSS3", "Javascript"],
+    "workers": 1,
+    "img": "./imgs/public.png",
+    "isKeyProject": true,
+    "siteLink": "https://kkh12345.github.io/renewal_public_institution/"
+  }
+]
