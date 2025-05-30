@@ -1,12 +1,14 @@
 [
   {
     "id": 0,
-    "title": "포트폴리오 페이지",
+    "title": "포트폴리오 모아보기 페이지",
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 1,
     "img": "./imgs/portfolio_page.png",
+    "fullImg": "./imgs/portfolio_page_full.png",
     "isKeyProject": false,
-    "siteLink": "#"
+    "siteLink": "#",
+    "period": "2일"
   },
   {
     "id": 1,
@@ -15,8 +17,10 @@
     "skills": ["HTML5", "SCSS"],
     "workers": 1,
     "img": "./imgs/daum.png",
+    "fullImg": "./imgs/daum_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/daum/"
+    "siteLink": "https://kkh12345.github.io/daum/",
+    "period": "3일"
   },
   {
     "id": 2,
@@ -25,8 +29,10 @@
     "skills": ["HTML5", "CSS3"],
     "workers": 1,
     "img": "./imgs/seoul_city.png",
+    "fullImg": "./imgs/seoul_city_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/seoul_city_hall/"
+    "siteLink": "https://kkh12345.github.io/seoul_city_hall/",
+    "period": "2일"
   },
   {
     "id": 3,
@@ -41,8 +47,10 @@
     ],
     "workers": 1,
     "img": "./imgs/mimico.png",
+    "fullImg": "./imgs/mimico_full.png",
     "isKeyProject": false,
-    "siteLink": "https://nimble-taffy-e9bacb.netlify.app/"
+    "siteLink": "https://nimble-taffy-e9bacb.netlify.app/",
+    "period": "제작 중..."
   },
   {
     "id": 4,
@@ -51,8 +59,10 @@
     "skills": ["React", "CSS3", "styled-components"],
     "workers": 1,
     "img": "./imgs/moani.png",
+    "fullImg": "./imgs/moani_full.png",
     "isKeyProject": true,
-    "siteLink": "https://aquamarine-eclair-bb5949.netlify.app/"
+    "siteLink": "https://aquamarine-eclair-bb5949.netlify.app/",
+    "period": "약 1개월"
   },
   {
     "id": 5,
@@ -61,8 +71,10 @@
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 1,
     "img": "./imgs/personal.png",
+    "fullImg": "./imgs/personal_full.png",
     "isKeyProject": false,
-    "siteLink": "https://kkh12345.github.io/personal_portfolio_Page/"
+    "siteLink": "https://kkh12345.github.io/personal_portfolio_Page/",
+    "period": "5일"
   },
   {
     "id": 6,
@@ -71,8 +83,10 @@
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 3,
     "img": "./imgs/interpark_ticket.png",
+    "fullImg": "./imgs/interpark_ticket_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/renewal_interpark_ticket/"
+    "siteLink": "https://kkh12345.github.io/renewal_interpark_ticket/",
+    "period": "약1개월"
   },
   {
     "id": 7,
@@ -81,8 +95,10 @@
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 1,
     "img": "./imgs/food.png",
+    "fullImg": "./imgs/food_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/cafe24_food/"
+    "siteLink": "https://kkh12345.github.io/cafe24_food/",
+    "period": "약 1주일"
   },
   {
     "id": 8,
@@ -91,7 +107,9 @@
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 1,
     "img": "./imgs/public.png",
+    "fullImg": "./imgs/public_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/renewal_public_institution/"
+    "siteLink": "https://kkh12345.github.io/renewal_public_institution/",
+    "period": "약 3주(기획,디자인 포함)"
   }
 ]

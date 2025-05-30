@@ -2,7 +2,8 @@
 const checkboxList = document.querySelectorAll(
   '.filter-container__check-item>input[type=checkbox]'
 );
-
+const modalContainer = document.querySelector('.modal-container');
+const modalCloseButton = document.querySelector('.modal-content__close-btn');
 let projectsArray = [];
 
 //프로젝트 데이터 받아오기
@@ -103,9 +104,9 @@ function createProjectCard(arr) {
 
     arr.forEach((a) => {
       const workers = a.workers > 1 ? 'Team' : 'Single';
-      template += ` <li class="project-container__item">
+      template += ` <li class="project-container__item" >
               <div class="project-card">
-                <a href="#">
+                <a href="#" data-id=${a.id} >
                   <div class="project-card__thumb-wrap">
                     <img
                       class="project-card__thumb"
@@ -123,12 +124,62 @@ function createProjectCard(arr) {
     });
 
     projectList.insertAdjacentHTML('beforeend', template);
+
+    //이벤트 리스너 달기(모달창 열기)
+
+    const openModal = (projectId) => {
+      modalContainer.classList.add('--open');
+      modalContentFill(projectId);
+    };
+
+    document.querySelectorAll('.project-card>a').forEach((a) => {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        openModal(this.dataset.id);
+      });
+    });
   } else {
     nullMessage.style.display = 'block'; //일치하는 결과가 없을 때 띄우는 메세지
   }
 }
 
-//필터 체크박스 클릭했을 때 실행
+//모달창 내용 채우기
+
+function modalContentFill(projectId) {
+  const [img, title, workers, period, skills, purpose, githubLink, siteLink] = [
+    document.querySelector('.modal-content__img-wrap>img'),
+    document.querySelector('.modal-content__tit'),
+    document.querySelector('.modal-content__info-item.workers'),
+    document.querySelector('.modal-content__info-item.period'),
+    document.querySelector('.modal-content__info-item.skills'),
+    document.querySelector('modal-content__info-item.purpose'),
+    document.querySelector('.modal-content__links').children[0],
+    document.querySelector('.modal-content__links').children[1],
+  ];
+
+  const findProject = projectsArray.find(
+    (project) => parseInt(projectId) == project.id
+  );
+
+  img.setAttribute('src', findProject.fullImg);
+  img.setAttribute('alt', findProject.title);
+
+  title.textContent = findProject.title;
+  workers.textContent = '제작 인원 : ' + findProject.workers;
+
+  period.textContent = '제작 기간 : ' + findProject.period;
+}
+
+//모달창 닫기
+modalContainer.addEventListener('click', modalClose);
+
+function modalClose(e) {
+  if (e.target === modalCloseButton || e.target === this) {
+    modalContainer.classList.remove('--open');
+  }
+}
+
+//체크박스 클릭했을 때 실행될 함수
 checkboxList.forEach((checkbox) => {
   checkbox.addEventListener('change', checkBoxChangeFunction);
 });

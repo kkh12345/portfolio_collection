@@ -24,6 +24,133 @@
   min-width: 1140px;
 }
 
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1140px;
+  padding: 0 30px;
+  background-color: #0000009c;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.modal-container.--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  display: flex;
+  width: 1000px;
+  height: 70vh;
+  background-color: #fff;
+  position: relative;
+}
+
+.modal-content__img-wrap,
+.modal-content__txt-wrap {
+  width: 50%;
+}
+
+.modal-content__img-wrap > img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.modal-content__txt-wrap {
+  padding: 30px 24px 30px 42px;
+  overflow-y: auto;
+  color: #333;
+}
+
+.modal-content__close-btn {
+  width: 36px;
+  aspect-ratio: 1;
+  padding: 8px;
+  border-radius: 50%;
+  background: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modal-content__close-btn:hover {
+  background-color: #eee;
+}
+
+.modal-content__close-btn > div {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  position: relative;
+}
+
+.modal-content__close-btn > div::after,
+.modal-content__close-btn > div::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.modal-content__close-btn > div::before {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.modal-content__close-btn > div::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.modal-content__tit {
+  color: #000;
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+}
+
+.modal-content__info-item {
+  padding: 0.4rem 0;
+}
+
+.modal-content__desc {
+  margin-top: 1.6rem;
+  line-height: 1.5;
+  color: var(--font-gray);
+}
+
+.modal-content__links {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.modal-content__links > a {
+  padding: 5px 18px;
+  background-color: #999;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.modal-content__links > a:hover {
+  background-color: var(--point-red);
+}
+
 .loading-message {
   padding: 10px 20px;
   background-color: var(--point-red);
@@ -148,7 +275,6 @@
 }
 
 .project-card__tit {
-  color: #363d47;
   font-size: 1.6rem;
   font-weight: 500;
 }
