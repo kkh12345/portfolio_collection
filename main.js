@@ -79,6 +79,12 @@ function filterProjects() {
     } else if (value === 'all-projects') {
       filterArray = [...projectsArray];
     }
+
+    if (value === 'responsive') {
+      filterArray = filterArray.filter(
+        (project) => project.isResponsive === true
+      );
+    }
   }
 
   for (let value of skillCheckValueArray) {
@@ -161,14 +167,17 @@ function modalContentFill(projectId) {
           <div class="modal-content__txt-wrap">
             <h3 class="modal-content__tit">${findProject.title}</h3>
             <ul class="modal-content__info-list">
-              <li class="modal-content__info-item workers">제작 인원 : ${
+              <li class="modal-content__info-item ">제작 인원 : ${
                 findProject.workers
               }</li>
-              <li class="modal-content__info-item period">제작 기간 : ${
+              <li class="modal-content__info-item ">제작 기간 : ${
                 findProject.period
               }</li>
-              <li class="modal-content__info-item skills">
+              <li class="modal-content__info-item ">
                 사용 기술 : ${findProject.skills.join(', ')}
+              </li>
+              <li class="modal-content__info-item ">
+                반응형 : ${findProject.isResponsive ? 'O' : 'X'}
               </li>
             </ul>
 

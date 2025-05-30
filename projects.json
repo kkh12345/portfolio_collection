@@ -7,10 +7,11 @@
     "img": "./imgs/portfolio_page.png",
     "fullImg": "./imgs/portfolio_page_full.png",
     "isKeyProject": false,
-    "period": "2일",
-    "desc": "- 저의 포트폴리오들을 한 눈에 볼 수 있게 제작한 사이트입니다. PC 버전입니다.",
+    "period": "2일째 진행중...",
+    "desc": "저의 포트폴리오들을 한 눈에 볼 수 있게 제작한 사이트입니다. PC 버전입니다.",
     "githubLink": "https://github.com/kkh12345/portfolio_collection",
-    "siteLink": "https://kkh12345.github.io/portfolio_collection/"
+    "siteLink": "https://kkh12345.github.io/portfolio_collection/",
+    "isResponsive": false
   },
   {
     "id": 1,
@@ -21,9 +22,10 @@
     "fullImg": "./imgs/daum_full.png",
     "isKeyProject": true,
     "period": "3일",
-    "desc": "- Daum 홈페이지를 클론 코딩하였습니다. PC버전입니다. 프로젝트를 진행하면서 SCSS를 사용해보니, 기존 CSS보다 변수 선언이 훨씬 편리하다는 점을 느꼈습니다. 특히, 믹스인은 재사용 가능한 스타일 코드를 만드는 것과 가독성 면에서 매우 유용했습니다. extend도 시도해봤지만 기대만큼의 장점을 느끼지 못해 결국 사용하지 않았습니다. 그리고 @use와 @forward를 활용해 다른 SCSS 파일을 간편하게 불러올 수 있다는 점도 매우 편리했습니다.",
+    "desc": "Daum 홈페이지를 클론 코딩하였습니다. PC 버전입니다. 프로젝트를 진행하면서 SCSS를 사용해보니, 기존 CSS보다 변수 선언이 훨씬 편리하다는 점을 느꼈습니다.<span class='spacer'></span> 특히, 믹스인은 재사용 가능한 스타일 코드를 만드는 것과 가독성 면에서 매우 유용했습니다. extend도 시도해봤지만 기대만큼의 장점을 느끼지 못해 결국 사용하지 않았습니다. 그리고 use와 forward를 활용해 다른 SCSS 파일을 간편하게 불러올 수 있다는 점도 매우 편리했습니다.",
     "githubLink": "https://github.com/kkh12345/daum",
-    "siteLink": "https://kkh12345.github.io/daum/"
+    "siteLink": "https://kkh12345.github.io/daum/",
+    "isResponsive": false
   },
   {
     "id": 2,
@@ -34,9 +36,10 @@
     "fullImg": "./imgs/seoul_city_full.png",
     "isKeyProject": true,
     "period": "2일",
-    "desc": "- 서울특별시 홈페이지를 클론코딩하였습니다. PC버전입니다. 이 프로젝트를 진행하면서 웹 접근성과 웹 표준에 대해 생각해 보게 되었습니다. 클래스명 선언은 BEM을 주로 활용하였습니다.",
+    "desc": "서울특별시 홈페이지를 클론코딩하였습니다. PC 버전입니다. 이 프로젝트를 진행하면서 웹 접근성과 웹 표준에 대해 생각해 보게 되었습니다. 클래스명 선언은 BEM을 주로 활용하였습니다.",
     "githubLink": "https://github.com/kkh12345/seoul_city_hall",
-    "siteLink": "https://kkh12345.github.io/seoul_city_hall/"
+    "siteLink": "https://kkh12345.github.io/seoul_city_hall/",
+    "isResponsive": false
   },
   {
     "id": 3,
@@ -53,22 +56,24 @@
     "fullImg": "./imgs/mimico_full.png",
     "isKeyProject": false,
     "period": "제작 중...",
-    "desc": "- 제작 중입니다. 메인페이지, 메인페이지 반응형을 완료했고 상세페이지 제작 중입니다. ",
+    "desc": "제작 중입니다. 메인페이지, 메인페이지 반응형을 완료했고 상세페이지 제작 중입니다. ",
     "githubLink": "https://github.com/kkh12345/cafe24_mimico",
-    "siteLink": "https://nimble-taffy-e9bacb.netlify.app/"
+    "siteLink": "https://nimble-taffy-e9bacb.netlify.app/",
+    "isResponsive": true
   },
   {
     "id": 4,
     "title": "moani(카페24) 클론코딩",
-    "skills": ["React", "CSS3", "styled-components"],
+    "skills": ["React", "CSS3", "styled-components", "Swiper"],
     "workers": 1,
     "img": "./imgs/moani.png",
     "fullImg": "./imgs/moani_full.png",
     "isKeyProject": true,
     "period": "약 1개월",
-    "desc": "- 카페24에 있는 가구 쇼핑몰 moani를 클론코딩하였습니다.<br># 페이지 구성 : 메인 페이지, 검색 페이지, 상품 상세 페이지, 장바구니 페이지, 회원가입 페이지, 로그인 페이지, 리뷰 상세 페이지, 리뷰 페이지, lookbook페이지<br>▪상세 페이지 : 상품 이미지 줌 기능 직접 구현 등    <br> 주요 기능으로는  ",
+    "desc": "카페24에 있는 가구 쇼핑몰 moani를 클론코딩하였습니다. PC 버전입니다. <span class='spacer'></span><span class='spacer'></span># 페이지 구성 : 메인 페이지, 검색 페이지, 상품 상세 페이지, 장바구니 페이지, 회원가입 페이지, 로그인 페이지, 리뷰 상세 페이지, 리뷰 페이지, lookbook페이지<span class='spacer'></span><span class='spacer'></span> < 주요 기능 일부 ><span class='spacer'></span>* 상세 페이지 : 상품 이미지 줌 기능 직접 구현, 상품 옵션 선택 후 장바구니에 담기    <span class='spacer'></span>  * 회원가입 페이지 : 회원가입 유효성 검사<span class='spacer'></span>  * 로그인 페이지 : 회원가입 후 로그인<span class='spacer'></span>* 검색 페이지 : 상품 필터,검색<span class='spacer'></span> ",
     "githubLink": "https://github.com/kkh12345/cafe24_moani",
-    "siteLink": "https://aquamarine-eclair-bb5949.netlify.app/"
+    "siteLink": "https://aquamarine-eclair-bb5949.netlify.app/",
+    "isResponsive": false
   },
   {
     "id": 5,
@@ -79,47 +84,51 @@
     "fullImg": "./imgs/personal_full.png",
     "isKeyProject": false,
     "period": "5일",
-    "desc": "",
+    "desc": "개인 소개 페이지를 간단하게 만들었습니다. 반응형으로 제작되었습니다. 인트로 애니메이션을 구현할 때 비동기 처리를 위해 Promise, async/await 을 사용했습니다. 앵커 스크롤과 슬라이드 기능이 있습니다.",
     "githubLink": "https://github.com/kkh12345/personal_portfolio_Page",
-    "siteLink": "https://kkh12345.github.io/personal_portfolio_Page/"
+    "siteLink": "https://kkh12345.github.io/personal_portfolio_Page/",
+    "isResponsive": true
   },
   {
     "id": 6,
     "title": "인터파크티켓 홈페이지 리뉴얼",
-    "skills": ["HTML5", "CSS3", "Javascript"],
+    "skills": ["HTML5", "CSS3", "Javascript", "Swiper"],
     "workers": 3,
     "img": "./imgs/interpark_ticket.png",
     "fullImg": "./imgs/interpark_ticket_full.png",
     "isKeyProject": true,
     "period": "약1개월",
-    "desc": "",
+    "desc": "더 자세한 설명은 Readme에 있습니다. 반응형으로 제작되었습니다.<span class='spacer'></span># 페이지 구성 : 메인 페이지, 공연장 페이지, 공연 상세 페이지<span class='spacer'></span> < 주요 기능 일부 ><span class='spacer'></span>* 메인 페이지 : 검색 기능, 로그인 시 최근 예매 내역, 관심 공연 표시 등 <span class='spacer'></span>* 공연 상세 페이지 : 공연 정보 표시(출연진, 공연 상세 정보, 가격 등) , 예매하기 버튼 클릭 시 좌석 예매 창이 뜨고 좌석 예매 기능, 관심 공연 등록(하트 아이콘)<span class='spacer'></span>* 공연장 페이지 : 지도 api를 활용한 공연장 위치 정보 표시, 마커 커스텀",
     "githubLink": "https://github.com/kkh12345/renewal_interpark_ticket",
-    "siteLink": "https://kkh12345.github.io/renewal_interpark_ticket/"
+    "siteLink": "https://kkh12345.github.io/renewal_interpark_ticket/",
+    "isResponsive": true
   },
   {
     "id": 7,
     "title": "한끼두끼(카페24) 클론코딩",
-    "skills": ["HTML5", "CSS3", "Javascript"],
+    "skills": ["HTML5", "CSS3", "Javascript", "Swiper"],
     "workers": 1,
     "img": "./imgs/food.png",
     "fullImg": "./imgs/food_full.png",
     "isKeyProject": true,
     "period": "약 1주일",
-    "desc": "",
+    "desc": "카페24에 있는 음식 쇼핑몰 한끼두끼를 클론코딩하였습니다. 반응형으로 제작되었습니다. <span class='spacer'></span># 페이지 구성 : 메인 페이지, 로그인&회원가입 페이지, 검색 페이지, 장바구니 페이지, 상품 상세 페이지 <span class='spacer'></span><span class='spacer'></span>< 주요 기능 일부 ><span class='spacer'></span>*  검색 페이지 : 검색 기능, 상품 정렬 옵션 기능 <span class='spacer'></span>* 상품 상세 페이지 : 장바구니에 상품 추가 가능, 좋아요 기능<span class='spacer'></span>* 장바구니 페이지 : 선택 상품 삭제, 장바구니 비우기, 상품 수량 조절, 선택한 상품의 가격 합 표시 기능,",
     "githubLink": "https://github.com/kkh12345/cafe24_food",
-    "siteLink": "https://kkh12345.github.io/cafe24_food/"
+    "siteLink": "https://kkh12345.github.io/cafe24_food/",
+    "isResponsive": true
   },
   {
     "id": 8,
     "title": "한국마약퇴치운동본부 리뉴얼",
-    "skills": ["HTML5", "CSS3", "Javascript"],
+    "skills": ["HTML5", "CSS3", "Javascript", "Swiper"],
     "workers": 1,
     "img": "./imgs/public.png",
     "fullImg": "./imgs/public_full.png",
     "isKeyProject": true,
     "period": "약 3주(기획,디자인 포함)",
-    "desc": "",
+    "desc": "한국마약퇴치운동본부 사이트를 리뉴얼했습니다. 반응형으로 제작되었습니다.<span class='spacer'></span><span class='spacer'></span># 페이지 구성 : 메인 페이지, 로그인&회원가입 페이지, 공지사항 페이지<span class='spacer'></span>< 주요 기능 일부 ><span class='spacer'></span>* 공지사항 페이지 : 탭, 페이지네이션 기능 ",
     "githubLink": "https://github.com/kkh12345/renewal_public_institution",
-    "siteLink": "https://kkh12345.github.io/renewal_public_institution/"
+    "siteLink": "https://kkh12345.github.io/renewal_public_institution/",
+    "isResponsive": true
   }
 ]
