@@ -2,8 +2,9 @@
 const checkboxList = document.querySelectorAll(
   '.filter-container__check-item>input[type=checkbox]'
 );
+const fullContainer = document.querySelector('.full-container');
 const modalContainer = document.querySelector('.modal-container');
-const modalCloseButton = document.querySelector('.modal-content__close-btn');
+
 let projectsArray = [];
 
 //프로젝트 데이터 받아오기
@@ -126,9 +127,9 @@ function createProjectCard(arr) {
     projectList.insertAdjacentHTML('beforeend', template);
 
     //이벤트 리스너 달기(모달창 열기)
-
     const openModal = (projectId) => {
       modalContainer.classList.add('--open');
+      fullContainer.classList.add('--no-scroll');
       modalContentFill(projectId);
     };
 
@@ -144,39 +145,61 @@ function createProjectCard(arr) {
 }
 
 //모달창 내용 채우기
-
 function modalContentFill(projectId) {
-  const [img, title, workers, period, skills, purpose, githubLink, siteLink] = [
-    document.querySelector('.modal-content__img-wrap>img'),
-    document.querySelector('.modal-content__tit'),
-    document.querySelector('.modal-content__info-item.workers'),
-    document.querySelector('.modal-content__info-item.period'),
-    document.querySelector('.modal-content__info-item.skills'),
-    document.querySelector('modal-content__info-item.purpose'),
-    document.querySelector('.modal-content__links').children[0],
-    document.querySelector('.modal-content__links').children[1],
-  ];
+  const modalContent = document.querySelector('.modal-content');
 
   const findProject = projectsArray.find(
     (project) => parseInt(projectId) == project.id
   );
 
-  img.setAttribute('src', findProject.fullImg);
-  img.setAttribute('alt', findProject.title);
+  let template = `<button type="button" class="modal-content__close-btn">
+            <div></div>
+          </button>
+          <div class="modal-content__img-wrap">
+            <img src=${findProject.fullImg} alt=${findProject.title} />
+          </div>
+          <div class="modal-content__txt-wrap">
+            <h3 class="modal-content__tit">${findProject.title}</h3>
+            <ul class="modal-content__info-list">
+              <li class="modal-content__info-item workers">제작 인원 : ${
+                findProject.workers
+              }</li>
+              <li class="modal-content__info-item period">제작 기간 : ${
+                findProject.period
+              }</li>
+              <li class="modal-content__info-item skills">
+                사용 기술 : ${findProject.skills.join(', ')}
+              </li>
+            </ul>
 
-  title.textContent = findProject.title;
-  workers.textContent = '제작 인원 : ' + findProject.workers;
+            <p class="modal-content__desc">
+              ${findProject.desc}
+            </p>
+            <div class="modal-content__links">
+              <a href=${
+                findProject.githubLink
+              } target="_blank">Github 바로가기</a>
+              <a href=${
+                findProject.siteLink
+              } target="_blank">사이트 바로가기</a>
+            </div>`;
 
-  period.textContent = '제작 기간 : ' + findProject.period;
-}
+  [...modalContent.children].forEach((a) => a.remove());
+  modalContent.insertAdjacentHTML('beforeend', template);
 
-//모달창 닫기
-modalContainer.addEventListener('click', modalClose);
+  //이벤트 리스너 달기 (모달창 닫기)
+  const modalClose = (e) => {
+    const modalCloseButton = document.querySelector(
+      '.modal-content__close-btn'
+    );
 
-function modalClose(e) {
-  if (e.target === modalCloseButton || e.target === this) {
-    modalContainer.classList.remove('--open');
-  }
+    if (e.target === modalCloseButton || e.target === e.modalContainer) {
+      modalContainer.classList.remove('--open');
+      fullContainer.classList.remove('--no-scroll');
+    }
+  };
+
+  modalContainer.addEventListener('click', modalClose);
 }
 
 //체크박스 클릭했을 때 실행될 함수

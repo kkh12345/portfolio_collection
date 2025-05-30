@@ -7,36 +7,39 @@
     "img": "./imgs/portfolio_page.png",
     "fullImg": "./imgs/portfolio_page_full.png",
     "isKeyProject": false,
-    "siteLink": "#",
-    "period": "2일"
+    "period": "2일",
+    "desc": "저의 포트폴리오들을 한 눈에 볼 수 있게 제작한 사이트입니다. PC 버전입니다.",
+    "githubLink": "https://github.com/kkh12345/portfolio_collection",
+    "siteLink": "https://kkh12345.github.io/portfolio_collection/"
   },
   {
     "id": 1,
-
     "title": "Daum 홈페이지 클론코딩",
     "skills": ["HTML5", "SCSS"],
     "workers": 1,
     "img": "./imgs/daum.png",
     "fullImg": "./imgs/daum_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/daum/",
-    "period": "3일"
+    "period": "3일",
+    "desc": "Daum 홈페이지를 클론 코딩하였습니다. PC버전입니다. 프로젝트를 진행하면서 SCSS를 사용해보니, 기존 CSS보다 변수 선언이 훨씬 편리하다는 점을 느꼈습니다. 특히, 믹스인은 재사용 가능한 스타일 코드를 만들어 코드 중복을 줄이고 유지보수를 쉽게 해주며, 인자를 활용해 다양한 스타일 변형도 가능해 매우 유용했습니다. 중첩 문법 덕분에 클래스명을 작성하는 것도 훨씬 수월했지만, 과도하게 사용하면 오히려 가독성이 떨어질 수 있다는 점도 깨달았습니다. 반면, extend도 시도해봤지만 기대만큼의 장점을 느끼지 못해 결국 사용하지 않았습니다. 그리고 @use와 @forward를 활용해 다른 SCSS 파일을 간편하게 불러올 수 있다는 점도 매우 편리했습니다.",
+    "githubLink": "https://github.com/kkh12345/daum",
+    "siteLink": "https://kkh12345.github.io/daum/"
   },
   {
     "id": 2,
-
-    "title": "서울시청 홈페이지 클론코딩",
+    "title": "서울특별시 홈페이지 클론코딩",
     "skills": ["HTML5", "CSS3"],
     "workers": 1,
     "img": "./imgs/seoul_city.png",
     "fullImg": "./imgs/seoul_city_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/seoul_city_hall/",
-    "period": "2일"
+    "period": "2일",
+    "desc": "서울특별시 홈페이지를 클론코딩하였습니다. PC버전입니다. 이 프로젝트를 진행하면서 웹 접근성과 웹 표준에 대해 생각해 보게 되었습니다. 클래스명 선언은 BEM을 주로 활용하였습니다.",
+    "githubLink": "https://github.com/kkh12345/seoul_city_hall",
+    "siteLink": "https://kkh12345.github.io/seoul_city_hall/"
   },
   {
     "id": 3,
-
     "title": "mimico(카페24) 클론코딩 (제작 중...)",
     "skills": [
       "React",
@@ -49,67 +52,74 @@
     "img": "./imgs/mimico.png",
     "fullImg": "./imgs/mimico_full.png",
     "isKeyProject": false,
-    "siteLink": "https://nimble-taffy-e9bacb.netlify.app/",
-    "period": "제작 중..."
+    "period": "제작 중...",
+    "desc": "제작 중입니다. 메인페이지, 메인페이지 반응형을 완료했고 상세페이지 제작 중입니다. ",
+    "githubLink": "https://github.com/kkh12345/cafe24_mimico",
+    "siteLink": "https://nimble-taffy-e9bacb.netlify.app/"
   },
   {
     "id": 4,
-
     "title": "moani(카페24) 클론코딩",
     "skills": ["React", "CSS3", "styled-components"],
     "workers": 1,
     "img": "./imgs/moani.png",
     "fullImg": "./imgs/moani_full.png",
     "isKeyProject": true,
-    "siteLink": "https://aquamarine-eclair-bb5949.netlify.app/",
-    "period": "약 1개월"
+    "period": "약 1개월",
+    "desc": "",
+    "githubLink": "https://github.com/kkh12345/cafe24_moani",
+    "siteLink": "https://aquamarine-eclair-bb5949.netlify.app/"
   },
   {
     "id": 5,
-
     "title": "개인 소개 페이지",
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 1,
     "img": "./imgs/personal.png",
     "fullImg": "./imgs/personal_full.png",
     "isKeyProject": false,
-    "siteLink": "https://kkh12345.github.io/personal_portfolio_Page/",
-    "period": "5일"
+    "period": "5일",
+    "desc": "",
+    "githubLink": "https://github.com/kkh12345/personal_portfolio_Page",
+    "siteLink": "https://kkh12345.github.io/personal_portfolio_Page/"
   },
   {
     "id": 6,
-
     "title": "인터파크티켓 홈페이지 리뉴얼",
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 3,
     "img": "./imgs/interpark_ticket.png",
     "fullImg": "./imgs/interpark_ticket_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/renewal_interpark_ticket/",
-    "period": "약1개월"
+    "period": "약1개월",
+    "desc": "",
+    "githubLink": "https://github.com/kkh12345/renewal_interpark_ticket",
+    "siteLink": "https://kkh12345.github.io/renewal_interpark_ticket/"
   },
   {
     "id": 7,
-
     "title": "한끼두끼(카페24) 클론코딩",
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 1,
     "img": "./imgs/food.png",
     "fullImg": "./imgs/food_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/cafe24_food/",
-    "period": "약 1주일"
+    "period": "약 1주일",
+    "desc": "",
+    "githubLink": "https://github.com/kkh12345/cafe24_food",
+    "siteLink": "https://kkh12345.github.io/cafe24_food/"
   },
   {
     "id": 8,
-
     "title": "한국마약퇴치운동본부 리뉴얼",
     "skills": ["HTML5", "CSS3", "Javascript"],
     "workers": 1,
     "img": "./imgs/public.png",
     "fullImg": "./imgs/public_full.png",
     "isKeyProject": true,
-    "siteLink": "https://kkh12345.github.io/renewal_public_institution/",
-    "period": "약 3주(기획,디자인 포함)"
+    "period": "약 3주(기획,디자인 포함)",
+    "desc": "",
+    "githubLink": "https://github.com/kkh12345/renewal_public_institution",
+    "siteLink": "https://kkh12345.github.io/renewal_public_institution/"
   }
 ]
