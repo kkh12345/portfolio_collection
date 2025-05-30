@@ -221,11 +221,9 @@ function checkBoxChangeFunction(e) {
   const keyProjects = document.getElementById('key-projects');
 
   if (e.target.id === 'all-projects') {
-    keyProjects.checked = false;
-    allProjects.checked = true;
+    keyProjects.checked = !allProjects.checked;
   } else if (e.target.id === 'key-projects') {
-    allProjects.checked = false;
-    keyProjects.checked = true;
+    allProjects.checked = !keyProjects.checked;
   }
 
   filterProjects();
