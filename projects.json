@@ -8,7 +8,7 @@
     "fullImg": "./imgs/portfolio_page_full.png",
     "isKeyProject": false,
     "period": "2일",
-    "desc": "저의 포트폴리오들을 한 눈에 볼 수 있게 제작한 사이트입니다. PC 버전입니다.",
+    "desc": "- 저의 포트폴리오들을 한 눈에 볼 수 있게 제작한 사이트입니다. PC 버전입니다.",
     "githubLink": "https://github.com/kkh12345/portfolio_collection",
     "siteLink": "https://kkh12345.github.io/portfolio_collection/"
   },
@@ -21,7 +21,7 @@
     "fullImg": "./imgs/daum_full.png",
     "isKeyProject": true,
     "period": "3일",
-    "desc": "Daum 홈페이지를 클론 코딩하였습니다. PC버전입니다. 프로젝트를 진행하면서 SCSS를 사용해보니, 기존 CSS보다 변수 선언이 훨씬 편리하다는 점을 느꼈습니다. 특히, 믹스인은 재사용 가능한 스타일 코드를 만들어 코드 중복을 줄이고 유지보수를 쉽게 해주며, 인자를 활용해 다양한 스타일 변형도 가능해 매우 유용했습니다. 중첩 문법 덕분에 클래스명을 작성하는 것도 훨씬 수월했지만, 과도하게 사용하면 오히려 가독성이 떨어질 수 있다는 점도 깨달았습니다. 반면, extend도 시도해봤지만 기대만큼의 장점을 느끼지 못해 결국 사용하지 않았습니다. 그리고 @use와 @forward를 활용해 다른 SCSS 파일을 간편하게 불러올 수 있다는 점도 매우 편리했습니다.",
+    "desc": "- Daum 홈페이지를 클론 코딩하였습니다. PC버전입니다. 프로젝트를 진행하면서 SCSS를 사용해보니, 기존 CSS보다 변수 선언이 훨씬 편리하다는 점을 느꼈습니다. 특히, 믹스인은 재사용 가능한 스타일 코드를 만드는 것과 가독성 면에서 매우 유용했습니다. extend도 시도해봤지만 기대만큼의 장점을 느끼지 못해 결국 사용하지 않았습니다. 그리고 @use와 @forward를 활용해 다른 SCSS 파일을 간편하게 불러올 수 있다는 점도 매우 편리했습니다.",
     "githubLink": "https://github.com/kkh12345/daum",
     "siteLink": "https://kkh12345.github.io/daum/"
   },
@@ -34,7 +34,7 @@
     "fullImg": "./imgs/seoul_city_full.png",
     "isKeyProject": true,
     "period": "2일",
-    "desc": "서울특별시 홈페이지를 클론코딩하였습니다. PC버전입니다. 이 프로젝트를 진행하면서 웹 접근성과 웹 표준에 대해 생각해 보게 되었습니다. 클래스명 선언은 BEM을 주로 활용하였습니다.",
+    "desc": "- 서울특별시 홈페이지를 클론코딩하였습니다. PC버전입니다. 이 프로젝트를 진행하면서 웹 접근성과 웹 표준에 대해 생각해 보게 되었습니다. 클래스명 선언은 BEM을 주로 활용하였습니다.",
     "githubLink": "https://github.com/kkh12345/seoul_city_hall",
     "siteLink": "https://kkh12345.github.io/seoul_city_hall/"
   },
@@ -53,7 +53,7 @@
     "fullImg": "./imgs/mimico_full.png",
     "isKeyProject": false,
     "period": "제작 중...",
-    "desc": "제작 중입니다. 메인페이지, 메인페이지 반응형을 완료했고 상세페이지 제작 중입니다. ",
+    "desc": "- 제작 중입니다. 메인페이지, 메인페이지 반응형을 완료했고 상세페이지 제작 중입니다. ",
     "githubLink": "https://github.com/kkh12345/cafe24_mimico",
     "siteLink": "https://nimble-taffy-e9bacb.netlify.app/"
   },
@@ -66,7 +66,7 @@
     "fullImg": "./imgs/moani_full.png",
     "isKeyProject": true,
     "period": "약 1개월",
-    "desc": "",
+    "desc": "- 카페24에 있는 가구 쇼핑몰 moani를 클론코딩하였습니다.<br># 페이지 구성 : 메인 페이지, 검색 페이지, 상품 상세 페이지, 장바구니 페이지, 회원가입 페이지, 로그인 페이지, 리뷰 상세 페이지, 리뷰 페이지, lookbook페이지<br>▪상세 페이지 : 상품 이미지 줌 기능 직접 구현 등    <br> 주요 기능으로는  ",
     "githubLink": "https://github.com/kkh12345/cafe24_moani",
     "siteLink": "https://aquamarine-eclair-bb5949.netlify.app/"
   },

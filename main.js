@@ -193,7 +193,7 @@ function modalContentFill(projectId) {
       '.modal-content__close-btn'
     );
 
-    if (e.target === modalCloseButton || e.target === e.modalContainer) {
+    if (e.target === modalCloseButton || e.target === modalContainer) {
       modalContainer.classList.remove('--open');
       fullContainer.classList.remove('--no-scroll');
     }

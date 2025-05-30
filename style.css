@@ -33,7 +33,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 1140px;
   padding: 0 30px;
   background-color: #0000009c;
   opacity: 0;
@@ -41,8 +40,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   z-index: 10;
   transition: all 0.3s;
 }
@@ -54,7 +53,7 @@
 
 .modal-content {
   display: flex;
-  width: 1000px;
+  max-width: 1000px;
   height: 70vh;
   background-color: #fff;
   position: relative;
@@ -297,14 +296,15 @@
   padding: 5.6px 8px;
   border-radius: var(--filter-box-radius);
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .project-card__badge.Team {
-  background-color: #333;
-  color: #fff;
+  background-color: #d9eeec;
+  color: #00ac69;
 }
 
 .project-card__badge.Single {
-  background-color: #ddd;
-  color: #000;
+  background-color: #d9e6fa;
+  color: #0061f2;
 }
