@@ -45,6 +45,24 @@ function removeLoadingMessage() {
   }, 50);
 }
 
+//체크박스 클릭했을 때 실행될 함수
+checkboxList.forEach((checkbox) => {
+  checkbox.addEventListener('change', checkBoxChangeFunction);
+});
+
+function checkBoxChangeFunction(e) {
+  const allProjects = document.getElementById('all-projects');
+  const keyProjects = document.getElementById('key-projects');
+
+  if (e.target.id === 'all-projects') {
+    keyProjects.checked = !allProjects.checked;
+  } else if (e.target.id === 'key-projects') {
+    allProjects.checked = !keyProjects.checked;
+  }
+
+  filterProjects();
+}
+
 //필터링 후 카드 생성
 function filterProjects() {
   const skillCheckboxList = document.querySelectorAll(
@@ -209,24 +227,6 @@ function modalContentFill(projectId) {
   };
 
   modalContainer.addEventListener('click', modalClose);
-}
-
-//체크박스 클릭했을 때 실행될 함수
-checkboxList.forEach((checkbox) => {
-  checkbox.addEventListener('change', checkBoxChangeFunction);
-});
-
-function checkBoxChangeFunction(e) {
-  const allProjects = document.getElementById('all-projects');
-  const keyProjects = document.getElementById('key-projects');
-
-  if (e.target.id === 'all-projects') {
-    keyProjects.checked = !allProjects.checked;
-  } else if (e.target.id === 'key-projects') {
-    allProjects.checked = !keyProjects.checked;
-  }
-
-  filterProjects();
 }
 
 //함수 실행

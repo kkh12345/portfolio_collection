@@ -26,7 +26,7 @@
 /* 스타일 */
 
 .full-container {
-  min-width: 1140px;
+  /* min-width: 1140px; */
 }
 
 .full-container.--no-scroll {
@@ -135,37 +135,43 @@
   font-size: 2.4rem;
 }
 
+.modal-content__info-list {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #ddd;
+}
+
 .modal-content__info-item {
-  padding: 0.4rem 0;
+  padding: 0.3rem 0;
   color: #222;
+  font-size: 1.4rem;
 }
 
 .modal-content__desc {
-  margin-top: 1.6rem;
-  line-height: 1.8;
+  margin-top: 2rem;
+  line-height: 1.5;
   font-size: 1.5rem;
-  color: #777;
+  color: #555;
   word-break: break-all;
 }
 
 .modal-content__links {
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
   margin-top: 3rem;
 }
 
 .modal-content__links > a {
   display: block;
-  padding: 5px 20px;
+  padding: 8px 20px;
   background-color: #555;
-  border-radius: 5px;
   color: #fff;
   font-weight: 500;
   font-size: 1.4rem;
+  transition: all 0.3s;
 }
 
 .modal-content__links > a:hover {
-  background-color: var(--point-red);
+  background-color: var(--hovered-red);
 }
 
 .loading-message {
@@ -189,26 +195,28 @@
 }
 
 .page-tit-container p {
+  line-height: 1.5;
   font-size: 1.6rem;
-  color: var(--font-gray);
+  color: #333;
 }
 
 .filter-container {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1.6rem;
+  gap: 2rem;
+  padding-bottom: 3rem;
   border-bottom: 1px solid #ddd;
 }
 
 .filter-container h3 {
   color: var(--font-gray);
   font-size: 1.3rem;
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 600;
 }
 
 .filter-container__check-list {
   display: flex;
+  min-height: 50px;
   margin-top: 0.5rem;
   font-size: 1.5rem;
   background-color: #fff;
@@ -222,6 +230,7 @@
   align-items: center;
   gap: 0.8rem;
   padding: 14px 18px;
+  white-space: nowrap;
   transition: var(--common-transition);
 }
 
@@ -235,8 +244,9 @@
 }
 
 .filter-container__check-item input[type='checkbox'] {
-  width: 12.25px;
-  height: 12.25px;
+  width: 15px;
+  aspect-ratio: 1;
+
   accent-color: var(--point-red);
 }
 
@@ -252,12 +262,11 @@
 .project-container__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-top: 4rem;
+  gap: 4rem 4rem;
+  padding: 3rem 0;
 }
 
 .project-card {
-  padding: 0 20px;
-  margin-bottom: 40px;
 }
 
 .project-card > a {
@@ -271,6 +280,7 @@
 }
 
 .project-card__thumb-wrap {
+  width: 100%;
   aspect-ratio: 1.5;
   overflow: hidden;
   border-radius: var(--card-radius);
