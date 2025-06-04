@@ -7,7 +7,7 @@
     "img": "./imgs/portfolio_page.png",
     "fullImg": "./imgs/portfolio_page_full.png",
     "isKeyProject": false,
-    "period": "2일째 진행중...",
+    "period": "3일",
     "desc": "저의 포트폴리오들을 한 눈에 볼 수 있게 제작한 사이트입니다. PC 버전입니다.",
     "githubLink": "https://github.com/kkh12345/portfolio_collection",
     "siteLink": "https://kkh12345.github.io/portfolio_collection/",
