@@ -48,15 +48,15 @@
       "React",
       "CSS3",
       "styled-components",
-      "react-hook-form",
-      "redux-toolkit"
+      "redux-toolkit",
+      "custom hook"
     ],
     "workers": 1,
     "img": "./imgs/mimico.png",
     "fullImg": "./imgs/mimico_full.png",
     "isKeyProject": false,
     "period": "제작 중...",
-    "desc": "제작 중입니다. 메인페이지, 메인페이지 반응형을 완료했고 상세페이지 제작 중입니다. ",
+    "desc": "제작 중입니다. 메인페이지, 메인페이지 반응형을 완료했고 상세페이지 제작 중입니다.  ",
     "githubLink": "https://github.com/kkh12345/cafe24_mimico",
     "siteLink": "https://nimble-taffy-e9bacb.netlify.app/",
     "isResponsive": true
